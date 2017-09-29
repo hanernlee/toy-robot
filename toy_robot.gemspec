@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Christopher Lee"]
   spec.email         = ["hanernlee@gmail.com"]
 
-  spec.summary       = %q{Toy Robot}
-  spec.description   = %q{Toy Robot}
+  spec.summary       = %q{Toy Robot Simulator}
+  spec.description   = %q{Toy Robot Simulator}
   spec.homepage      = "https://github.com/hanernlee/toy-robot"
   spec.license       = "MIT"
 
