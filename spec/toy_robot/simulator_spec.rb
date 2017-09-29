@@ -26,5 +26,20 @@ RSpec.describe ToyRobot::Simulator do
       expect(robot).to receive(:move)
       subject.move
     end
+
+    it "tells the robot to turn left" do
+      expect(robot).to receive(:turn_left)
+      subject.turn_left
+    end
+
+    it "tells the robot to turn right" do
+      expect(robot).to receive(:turn_right)
+      subject.turn_right
+    end
+
+    it "tells the robot to report" do
+      expect(robot).to receive(:report)
+      subject.report
+    end
   end
 end
