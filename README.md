@@ -1,14 +1,45 @@
 # Toy Robot Simulator
 
-Re-attempting Toy Robot again this time with the help of a walkthrough. Applying a more OOP approach and more robust testing.
+Re-attempting Toy Robot again this time with the help of a walkthrough in applying an OOP approach coupled with much more robust testing of the application.
 
 ## Installation
+Clone this repository into your directory. Inside the directory run:
+```
+$ bundle install
+```
+Note: You must have Ruby installed to run this app
 
 ## Usage
 
-## Specification
+First we need to make this file executable. Run the below command line in terminal.
+```
+chmod +x exe/toy_robot
+```
 
-### Description
+Please look for a commands.txt file in the root folder. Write out your commands in the .txt file.
+For example :
+
+```
+PLACE 0,0,NORTH
+MOVE
+REPORT
+```
+
+With the commands now present,run the below in terminal:
+```
+bundle exec exe/toy_robot commands.txt
+```
+You should then see an output in terminal. Make sure `REPORT` command is present to see output.
+
+Change the commands as many times as you wish in the commands.txt file to see different results.
+
+## Testing
+To run tests, enter the below in terminal:
+```
+rspec spec
+```
+
+### Specification
 - The application is a simulation of a toy robot moving on a square tabletop, of dimensions 5 units x 5 units.
 - There are no other obstructions on the table surface.
 - The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement
