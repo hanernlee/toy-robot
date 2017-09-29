@@ -16,7 +16,7 @@ First we need to make this file executable. Run the below command line in termin
 chmod +x exe/toy_robot
 ```
 
-Please look for a commands.txt file in the root folder. Write out your commands in the .txt file.
+Please look for a `commands.txt` file in the root folder. Write out your commands in the `.txt` file.
 For example :
 
 ```
@@ -25,16 +25,20 @@ MOVE
 REPORT
 ```
 
-With the commands now present,run the below in terminal:
+With the commands present, run the below in terminal:
 ```
 bundle exec exe/toy_robot commands.txt
 ```
-You should then see an output in terminal. Make sure `REPORT` command is present to see output.
+
+You should then see an output similar to the below in terminal if there is a `REPORT` command. 
+```
+Robot is currently at (0, 1) and it's facing NORTH
+```
 
 Change the commands as many times as you wish in the commands.txt file to see different results.
 
 ## Testing
-To run tests, enter the below in terminal:
+To run tests for the application, enter the below in terminal:
 ```
 rspec spec
 ```
